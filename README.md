@@ -19,7 +19,7 @@
 
  # Technologies Used
  
-  The technologies used include firstly HTML, CSS and Javascript. The application is built in [ReactJS](https://reactjs.org/). There is use of NodeJS and ExpressJS at the server     side i.e- the backend.
+  The technologies used include firstly HTML, CSS+SCSS and Javascript. The application is built in [ReactJS](https://reactjs.org/). There is use of NodeJS and ExpressJS at the server     side i.e- the backend.
   [PeerJS](https://peerjs.com/), [SocketIO](https://socket.io/) are the two major libraries used to achieve the real-time communication capabilities and establish peer to peer       connections, server-client association and enable web based communication of remote peers.
   Other libraries majorly used libraires for miscellaneous features like emailing, frontend part include [Material-UI](https://material-ui.com/), [EMAIL-JS](https://www.emailjs.com/), [React-Icons](https://react-icons.github.io/react-icons).
   
