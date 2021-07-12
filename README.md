@@ -10,6 +10,8 @@
   
   There are some other additional features as well. These include a raise hand feature using which, if any participant wants to speak/raise a point they may raise their hands and   all other participants in the call/meeting are notified the same. After speaking their points then the candidate may lower their hand and other participants will be notified       accordingly. There are also features to mute yourself, stop your camera(video). The participants can also check their network connection if facing any issues using the 'Network   Connection' button provided and it will show the Bandwidth, status of the low data mode and the Signal Strength of their internet connection.At all points, the current time is     also visible on the screen of the pariticipants.
  
+ # Note : The application is currently made specific for Google Chrome users as it includes some features specific to the browser. I will now try to make it cross-browser compatible. For the time, kindly use in [Google Chrome](https://www.google.com/intl/en_in/chrome/) for the best use.
+ 
  # Technologies Used
  
   The technologies used include firstly HTML, CSS and Javascript. The application is built in [ReactJS](https://reactjs.org/). There is use of NodeJS and ExpressJS at the server     side i.e- the backend.
