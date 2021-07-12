@@ -1,5 +1,5 @@
-# connecT : A MS Teams Clone Engage 2021
- I was selected as a mentee for the Microsoft Engage Program 2021. This project is my final solution submission for the task/challenge given to us in the  Microsoft Engage Program  2021.
+# connecT : A MS Teams Clone (Engage 2021)
+ I was selected as a mentee for the Microsoft Engage Program 2021. This project : 'connecT' is my final solution submission for the task/challenge given to us in the  Microsoft Engage Program  2021.
  
  # Project Link
  The link for the application : https://samyakfrontendapp.herokuapp.com/
