@@ -1,0 +1,237 @@
+$primaryColor: #56b96d;
+$primaryBGColor: #2f9349;
+
+body {
+    margin : 0;
+    overflow: hidden;
+}
+@mixin flex-container() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: $bg_color;
+}
+
+.header-container{
+
+    height : 100vh;
+    .header-nav-bar{
+        background-color: transparent;
+        .header-logo-container{
+            .logo-img{
+                height: 100px;
+                position : relative;
+                right : 1%;
+                width: 200px;
+            }
+            height: 100px;
+            width: 200px;
+        }
+        .datetime-container{
+            position: relative;
+            left : 70%;
+        }
+        // color : white,
+    }
+    .left-content-container{
+        position : absolute;
+        margin : 10px;
+        padding:10px;
+        height : 200px;
+        width : 500px;
+        left : 3%;
+        top : 28%;
+        
+
+        .joining-flex-container{
+            width: 640px;
+            display : flex;
+        }
+        .join-button{
+            flex : 1;
+        }
+        .link-joining{
+            margin-top : 2%;
+            margin-right : 10%;
+            display: flex;
+            .join-link-text-box{
+                flex : 1;
+            }
+            .join-clickable-text{
+                margin-right:4%;
+                margin-bottom: 50%;
+            }
+        } 
+    }
+    .right-container{
+        position: absolute;
+        margin:10px;
+        padding:10px;
+        height : 200px;
+        width : 400px;
+        left : 62%;
+        top : 22%;
+    }
+
+
+
+}
+
+
+.footer-wrapper{
+
+    display : flex;
+    top: unset;
+    bottom: 0;
+    margin-top: 0.2%;
+    padding : 3px;
+    width : 100%;
+    justify-content: space-between;
+    .left-flex-comp{
+        display: flex;
+        justify-content: center;
+        width : 25%;
+        position : relative;
+        right : 2%;
+        align-items: center;
+        .footer-datetime{
+            margin : 6% 3% 4% 5%;
+        }
+        .meeting-details{
+            border-radius: 50%;
+            margin-left : 5%;
+            margin-right : 2%;
+            margin-bottom : 2%;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            }
+        }
+        .invite-people{
+            border-radius: 50%;
+            margin-left : 5%;
+            margin-bottom : 2%;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            } 
+        }
+    }
+    .middle-flex-comp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width :45%;
+        $margin-val : 1.5%;
+        .mic-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow:  0 0 4px 1px black;
+            }
+        }
+        .end-call-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow:  0 0 4px 1px black;
+            }
+
+        }
+        .video-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            }
+
+        }
+        .screen-share-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            }
+        }
+        .hand-raise-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            }
+        }
+
+    }
+    .right-flex-comp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width : 30%;
+        $margin-val : 1.5%;
+        .chat-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            }
+        }
+        .participants-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            }        
+        }
+        .check-connection-btn{
+            border-radius: 50%;
+            margin-left : $margin-val;
+            margin-right : $margin-val;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0 0 4px 1px black;
+            }   
+        }
+    }
+}
+.room-video-container{
+    background-color : #202124;
+    display : grid;
+    height: calc(100vh - 80px);
+    grid-gap: 6px 6px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    &>* {
+        width: 100%;
+        height: 100%;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+

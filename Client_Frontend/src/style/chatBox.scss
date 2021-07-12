@@ -1,0 +1,73 @@
+.chat-box{
+    display : flex;
+    flex-direction: column;
+    .MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorRight.MuiPaper-elevation16 {
+        width: 380px;
+    }
+    .chat-box-header{
+        height : 10%;
+        display : flex;
+        width : 100%;
+        align-items : center;
+        .close-chat-btn{
+            margin-left : 3px;
+            margin-right : 6px;
+        }
+        .chat-header-text{
+            margin-left : 2px;
+            color: '#4425A7';
+        }
+    }
+    .chat-box-body{
+        min-height : 70%;
+        max-height: 80%;
+        overflow-y: scroll;
+        .chat-message-container{
+            width: 95%;
+            display : flow-root;
+            padding : 3px;
+            margin : 4px 4px 12px 6px;
+            box-shadow: 0 0px 4px 1px #4425A7;
+            border-radius: 5%;
+            .user-message-wrapper{
+                border-radius: 3px;
+                font-size: 14px;
+                .user-message-title-wrapper{
+                    display : flex;
+                    background-color: #F9F9F9 ;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px;
+                    .user-message-name{
+                        font-size: 18px;
+                        margin-left: 2px;
+                        padding : 2px;
+                    }
+                    .user-message-timestamp{
+                        margin-right: 5px;
+                        padding : 1px;
+                    }
+                }
+                .user-message-text{
+                    margin: 4px;
+                    line-break: anywhere;
+                }
+            }
+        }
+    }
+    .chat-box-footer{
+        margin : 6px;
+        padding : 10px;
+        height: 10%;
+        width : 95%;
+        display : flex;
+        justify-content: center;
+        .send-button{
+            width : 10%;
+        }
+        .message-input{
+            width: 90%;
+        }
+
+    }
+}
